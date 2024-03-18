@@ -1,0 +1,34 @@
+﻿<Window x:Class="EZprelims.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EZprelims"
+        mc:Ignorable="d"
+        Title="8-bit binary game" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="8-Bit Binary Game" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,20,0,0"/>
+
+        <TextBlock Name="NumberTextBlock" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,50,0,0"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="Bit1" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit2" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit3" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit4" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit5" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit6" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit7" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+                <TextBox Name="Bit8" Width="25" Height="30" FontSize="16" TextAlignment="Center" PreviewTextInput="BitTextBox_PreviewTextInput" />
+            </StackPanel>
+            <Button x:Name="SubmitButton" Content="Submit" Click="SubmitButton_Click" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <TextBlock Name="TimerTextBlock" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,195,0,0" Width="200"/>
+
+        <TextBlock Name="ScoreTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="24,20,0,0" Width="156"/>
+
+        <Button x:Name="Start" Content="Start" Click="StartButton_Click" Margin="0,310,300,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Width="200"/>
+    </Grid>
+</Window>
